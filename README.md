@@ -1,6 +1,6 @@
 # About Us Page---Zuri
 
-### Here is the hosted Github page for this project 👋
+### Here is the hosted Github page for this completed project 👋
 
 
 ##### (Live Preview)

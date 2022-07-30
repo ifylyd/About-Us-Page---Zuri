@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+    background-color: #efefef;
+}
+
+.white-bg {
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    }
+    
+/*### CREATE FLEX NAV ROW ###*/
+.row {  
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Create three menu columns that sits next to each other */
+/* Left column */
+.left-column {
+  flex: 10%;
+  background-color: #f1f1f1;
+}
+
+/* Menu column */
+.menu-column {
+  flex: 70%;
+  background-color: white;
+}
+
+/* Right column */
+.right-column {
+  flex: 10%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+li a {
+  display: block;
+  color: #000;
+  font-size: 12px;
+  padding: 5px 16px;
+  text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+  color: #ddd;
+}
+
+    
+/*###  STYLE NAV SIGN-IN BUTTON  ###*/
+a.button:link, a.button:visited {
+background-color: #053573;
+color: white;
+padding: 5px 40px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 12px;
+}
+.search .search-container {
+  float: right;
+}
+
+.search:after {
+display: table;
+content: "";
+clear: both;
+    }
+    
+.search input[type=text] {
+  padding: 9px 150px 9px 5px;
+  margin-top: 8px;
+  font-size: 20px;
+  margin-right: 0px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #efefef;
+}
+
+::placeholder {
+  font-size: 12px;
+}    
+
+.search .search-container button {
+  padding: 15px 25px;
+  margin-top: 8px;
+  background: #000;
+  font-size: 11px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  cursor: pointer;
+  color:aliceblue;
+}
+  
+/*### STYLE CONTENT SECTION ###*/  
+.about-content {
+    padding: 20px;
+    }
+    
+.title {
+color: gainsboro;  
+font-size: 30px;
+    }
+    
+.content-para {
+    margin-bottom: 80px;
+    }
+    
+/*### NEWSLETTER UPDATE FORM ###*/
+.update {
+    width: 50%;
+    margin: auto;
+    }
+
+    
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 60%;
+  background: #f1f1f1;
+    margin-right: 5px;
+}
+
+form.example button {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  background: #000;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    
+    
+/*### STYLE FOOTER SECTION ###*/
+.footer-col {
+        display: flex;
+  flex-flow: row wrap;
+  gap: 7rem;
+  justify-content: center;
+    margin-top: 100px;
+    font-size: 12.5px;
+    }
+    
+    .last-row {
+    border-top:1px solid #000;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 12px;
+    }
+
+/* Responsive layout WITH FLEX - when the screen is less than 700px wide, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {  
+  display: flex;
+  flex-flow: column;
+}
+  .search .search-container {
+  float: none;
+}
+  .search input[type=text] {
+  padding: 9px 50px 9px 10px;
+}
+
+}

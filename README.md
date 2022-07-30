@@ -1,10 +1,10 @@
-# Email-Verification-Page---Zuri
+# About Us Page---Zuri
 
 ### Here is the hosted Github page for this project 👋
 
 
 ##### (Live Preview)
-==> https://ifylyd.github.io/Email-Verification-Page---Zuri/
+==> https://ifylyd.github.io/About-Us-Page---Zuri/
 
 
 <!--

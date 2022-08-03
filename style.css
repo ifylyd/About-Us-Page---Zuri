@@ -4,27 +4,28 @@
 body {
 margin: 0;
 font-family: 'Poppins', sans-serif;
-    background-color: #efefef;
+background-color: #efefef;
+padding: 0;
 }
 
 .white-bg {
     background-color: #fff;
     width: 70%;
     margin: auto;
-    padding: 20px;
     }
     
 /*### CREATE FLEX NAV ROW ###*/
 .row {  
   display: flex;
   flex-flow: row wrap;
+    padding: 20px 20px 0 20px;
 }
 
 /* CREATE THREE COLUMN FOR NAV ROW */
 /* Left column */
 .left-column {
   flex: 10%;
-  background-color: #f1f1f1;
+    text-align: center;
 }
 
 /* Menu column */
@@ -36,7 +37,7 @@ font-family: 'Poppins', sans-serif;
 /* Right column */
 .right-column {
   flex: 10%;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -80,6 +81,7 @@ font-size: 12px;
 /*###  STYLE MENU SEARCH  ###*/
 .search .search-container {
   float: right;
+  padding: 0 20px 20px 20px;
 }
 
 .search:after {
@@ -92,10 +94,15 @@ clear: both;
   padding: 6px 150px 6px 5px;
   margin-top: 8px;
   font-size: 14px;
-  margin-right: 0px;
-  border-radius: 0px 5px 5px 0px;
-  border: 1px solid #efefef;
+  border-radius:5px 0 0 5px;
+  border: 1px solid #000;
+  border-right: none;
   height: 30px;
+  margin-right: -10px;
+}
+
+.search textarea:focus, input:focus{
+    outline: none;
 }
 
 ::placeholder {
@@ -105,51 +112,80 @@ clear: both;
 .search .search-container button {
   padding: 9px 10px 9px 10px;
   margin-top: px;
-  background: #000;
+  background: #f1f1f1;
   font-size: 11px;
-  border-radius: 5px 0 0 5px;
-  border: 1px solid #efefef;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #000;
   cursor: pointer;
-  color:aliceblue;
+  color:#000;
   height: 30px;
+  margin-left: 0;
+  border-left: none;
 }
   
 /*### STYLE CONTENT SECTION ###*/  
-.about-content {
-    padding: 20px;
+.about-content, .download {
+    padding: 0px 50px;
     }
     
 .title {
-color: gainsboro;  
+color: blue;  
 font-size: 30px;
     }
-    
+.content-unique {
+    margin-top: 80px;
+    }
 .content-para {
     margin-bottom: 80px;
     }
-    
+ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+i {
+    margin-right: 10px;
+    font-size: 12px;
+}
+/*#### STYLE DOWNLOAD APP ROW ####*/
+/* Left column */
+.right-content {
+  flex: 70%;
+}
+
+/* Menu column */
+.mobile-image {
+  flex: 30%;
+  text-align: center;
+}
+
 /*### NEWSLETTER UPDATE FORM ###*/
+.update-cover {
+    background-color: moccasin;
+    padding: 20px;
+    
+}
 .update {
-    width: 50%;
+    width: 70%;
     margin: auto;
+    background-color: moccasin;
+    text-align: center;
     }
 
     
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
-  border: 1px solid grey;
-  float: left;
+  border: none;
   width: 60%;
-  background: #f1f1f1;
-    margin-right: 5px;
+  background: #fff;
+  margin-right: 5px;
 }
 
 form.example button {
-  float: left;
-  width: 30%;
+  width: auto;
   padding: 10px;
-  background: #000;
+  background: blue;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -171,21 +207,25 @@ form.example::after {
     
 /*### STYLE FOOTER SECTION ###*/
 .footer-col {
-        display: flex;
+  display: flex;
   flex-flow: row wrap;
-  gap: 7rem;
+  gap: 5rem;
   justify-content: center;
-    margin-top: 100px;
-    font-size: 12.5px;
+  padding: 50px 0;
+  font-size: 12.5px;
+  background-color: #efeffe;
     }
     
     .last-row {
     border-top:1px solid #000;
         width: 100%;
         text-align: center;
-        padding-top: 20px;
+        padding: 20px;
         font-size: 12px;
     }
+h4 {
+    color: blue;
+}
 
 /* Responsive layout WITH FLEX - when the screen is less than 700px wide, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 775px) {
@@ -206,14 +246,14 @@ form.example::after {
 /*###  WHITE CONTENT BOX  ###*/
 .white-bg {
     background-color: #fff;
-    width: 100%;
+    width: auto;
     }
  /*###  STYLE MENU SEARCH  ###*/   
 .search input[type=text] {
-  padding: 9px 20px 5px 5px;
+  padding: 9px 5px 5px 5px;
   margin-top: 15px;
   font-size: 14px;
-  border-radius: 0 5px 5px 0;
+  border-radius:  0;
   border: 1px solid #efefef;
   height: 30px;
 }
@@ -233,8 +273,7 @@ form.example::after {
   height: 30px;
 }
     .update {
-    width: 85%;
-    margin: auto;
+    width: 99%;
     }
 
 /*### NEWSLETTER UPDATE FORM ###*/

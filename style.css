@@ -129,7 +129,7 @@ clear: both;
     }
     
 .title {
-color: blue;  
+color: #053573;  
 font-size: 30px;
     }
 .content-unique {
@@ -163,6 +163,7 @@ i {
 .update-cover {
     background-color: moccasin;
     padding: 20px;
+    margin-top: 20px;
     
 }
 .update {
@@ -185,7 +186,7 @@ form.example input[type=text] {
 form.example button {
   width: auto;
   padding: 10px;
-  background: blue;
+  background: #053573;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -224,7 +225,7 @@ form.example::after {
         font-size: 12px;
     }
 h4 {
-    color: blue;
+    color: #053573;
 }
 
 /* Responsive layout WITH FLEX - when the screen is less than 700px wide, make the columns stack on top of each other instead of next to each other */

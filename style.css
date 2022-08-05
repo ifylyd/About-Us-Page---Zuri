@@ -34,6 +34,7 @@ padding: 0;
   background-color: white;
 }
 
+
 /* Right column */
 .right-column {
   flex: 10%;
@@ -267,7 +268,7 @@ h4 {
   padding: 9px 5px 9px 5px;
   background: #000;
   font-size: 11px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 0 5px 5px 0;
   border: 1px solid #efefef;
   cursor: pointer;
   color:aliceblue;
